@@ -11,6 +11,8 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 h1 {
@@ -22,6 +24,8 @@ h1 {
 nav {
   background-color: #f4f4f4;
   padding: 10px;
+  position: sticky;
+  top: 128px;
   text-align: center;
 }
 
