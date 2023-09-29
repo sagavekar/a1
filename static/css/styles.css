@@ -1,15 +1,14 @@
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height:1.5;
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   position: sticky;
   top: 0;
@@ -29,6 +28,32 @@ nav {
   text-align: center;
 }
 
+nav a {
+  text-decoration: none;
+  border: #000000 solid 2px;
+  border-radius: 3px;
+  font-size: 17px;
+  padding: 5px;
+  color: #333;
+  margin: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #3a35d7 !important;
+
+  background-color: #ffa763 !important;
+}
+
+@keyframes colorChange {
+  0% { background-color: #ff5733; } /* Initial color */
+  50% { background-color: #f6eded; }   /* Midway color */
+  100% { background-color:  #ff5733; } /* Final color, matching the initial color */
+}
+
+#resume {
+  animation: colorChange 2s linear infinite; /* Animation lasts 2 seconds and repeats infinitely */
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -49,7 +74,8 @@ h1 {
   letter-spacing: 2px;
 }
 
-h2 {  /*to add under line effect*/
+h2 {
+  /*to add under line effect*/
   margin: 0;
   font-size: 24px;
   letter-spacing: 1px;
@@ -61,36 +87,71 @@ h2:hover {
 }
 
 
-nav {
-  background-color: #f4f4f4;
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  text-decoration: none;
-  border: #000000 solid 2px;
-  border-radius: 3px;
-  font-size: 17px;
-  padding: 5px;
-  color: #333;
-  margin: 10px;
-  transition: color 0.3s ease-in-out;
-}
-
-nav a:hover {
-  color: #3a35d7 !important;
-  
-  background-color: #ffa763 !important;
-}
 
 section {
-  padding: 20px;  
+  padding: 20px;
   margin: 20px;
   background-color: #f9f9f9;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(222, 127, 127, 0.1);
 }
+
+/* Table styles */
+#skills-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Table header styles */
+#skills-table th {
+  background-color: #f2f2f2;
+}
+
+/* Table cell styles */
+#skills-table td,
+#skills-table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+    /* Apply styles to the entire table */
+    #skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+
+  /* Style for table header */
+  #skills-table th {
+      background-color: #333;
+      color: #fff;
+      font-weight: bold;
+      padding: 10px;
+      text-align: left;
+  }
+
+  /* Style for alternating table rows */
+  #skills-table tr {
+      background-color: #f2f2f2;
+  }
+
+  /* Style for table cells */
+  #skills-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+  }
+
+  /* Hover effect on rows */
+  #skills-table tr:hover {
+      background-color: #669fa8;
+  }
+
+  /* Custom class for the table */
+  .styled-table {
+      font-family: Arial, sans-serif;
+  }
 
 footer {
   background-color: #333;
@@ -115,4 +176,3 @@ footer {
   padding: 10px;
   text-align: center;
 }
-
